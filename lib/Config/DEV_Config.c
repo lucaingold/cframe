@@ -29,6 +29,7 @@
 ******************************************************************************/
 #include "DEV_Config.h"
 #include <fcntl.h>
+#include "Debug.h"
 
 #if LGPIO
 int GPIO_Handle;

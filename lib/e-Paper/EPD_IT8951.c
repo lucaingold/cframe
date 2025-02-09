@@ -30,6 +30,7 @@
 ******************************************************************************/
 #include "EPD_IT8951.h"
 #include <time.h>
+#include "../Config/Debug.h"
 
 //basic mode definition
 UBYTE INIT_Mode = 0;
