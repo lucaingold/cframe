@@ -36,7 +36,8 @@
   */
 
 /* Includes ------------------------------------------------------------------*/
-#include "fonts.h"
+#include <stdint.h>
+#include "fonts.h"  // Contains sFONT definition
 
 // 
 //  Font data for Courier New 12pt
