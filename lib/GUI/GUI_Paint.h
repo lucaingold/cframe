@@ -79,16 +79,6 @@ typedef struct {
     UWORD Height;
 } sFONT;
 
-// Add after sFONT definition
-typedef struct {
-    const char *index;
-    const char *matrix;
-    UWORD Width;
-    UWORD Height;
-    UWORD ASCII_Width;
-    UWORD size;
-} cFONT;
-
 /**
  * Image attributes
 **/
