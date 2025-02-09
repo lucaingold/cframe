@@ -8,10 +8,9 @@ typedef struct {
     const uint8_t *table;
     uint16_t width;
     uint16_t height;
-} sFONT;
+} sFONT2;
 
 // Font declarations
-extern sFONT Font12;
+extern sFONT2 Font12;
 
 #endif /* __FONTS_H */
-
