@@ -65,8 +65,29 @@
 #ifndef __GUI_PAINT_H
 #define __GUI_PAINT_H
 
+// Include necessary headers
+#include <stdint.h>
 #include "../Config/DEV_Config.h"
 #include "../Fonts/fonts.h"
+
+// Type definitions
+typedef uint16_t UWORD;  // assuming UWORD is 16-bit unsigned
+
+typedef struct {
+    const unsigned char *table;
+    UWORD Width;
+    UWORD Height;
+} sFONT;
+
+// Add after sFONT definition
+typedef struct {
+    const char *index;
+    const char *matrix;
+    UWORD Width;
+    UWORD Height;
+    UWORD ASCII_Width;
+    UWORD size;
+} cFONT;
 
 /**
  * Image attributes
@@ -216,7 +237,7 @@ void Paint_DrawTime(UWORD Xstart, UWORD Ystart, PAINT_TIME *pTime, sFONT* Font, 
 
 void Paint_SetColor(UWORD x, UWORD y, UWORD color);
 void Paint_GetColor(UWORD color, UBYTE* arr_color);
-#endif
+#endif /* __GUI_PAINT_H */
 
 
 
