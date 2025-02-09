@@ -91,9 +91,7 @@ UBYTE Display_BMP(UWORD Panel_Width, UWORD Panel_Height, UDOUBLE Init_Target_Mem
     //Paint_DrawCircle(WIDTH*3/4, HEIGHT/4, 100, 0xF0, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
     //Paint_DrawNum(WIDTH/4, HEIGHT/5, 709, &Font20, 0x30, 0xB0);
 
-
-
-    Paint_DrawString_EN(10, 10, fileName, &Font24, 0xF0, 0x00);
+    Paint_DrawString_EN(10, 10, fileName, &Font12, 0xF0, 0x00);
     EPD_IT8951_4bp_Refresh(Refresh_Frame_Buf, 0, 0, WIDTH, HEIGHT, false, Init_Target_Memory_Addr, false);
 
 
