@@ -227,8 +227,3 @@ void Paint_DrawTime(UWORD Xstart, UWORD Ystart, PAINT_TIME *pTime, sFONT* Font, 
 void Paint_SetColor(UWORD x, UWORD y, UWORD color);
 void Paint_GetColor(UWORD color, UBYTE* arr_color);
 #endif /* __GUI_PAINT_H */
-
-
-
-
-
